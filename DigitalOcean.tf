@@ -12,7 +12,7 @@ provider "digitalocean" {
 }
 
 resource "digitalocean_kubernetes_cluster" "foo" {
-  name   = "foo"
+  name   = "KubeCluster01"
   region = "nyc1"
   # Grab the latest version slug from `doctl kubernetes options versions`
   version = "1.22.8-do.1"
