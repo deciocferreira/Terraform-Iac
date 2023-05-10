@@ -16,9 +16,9 @@ Neste projeto, iremos provisionar uma instância EC2 da AWS através da ferramen
 
 **Troque o valor vem depois de = nas linhas de código acima com os valores reais do seu usuário IAM.**
 
-## Soluções
+## Resultado esperado
 
-Após a execução do código Terraform, você terá uma instância EC2 do Ubuntu em sua conta da AWS.
+Após a execução do código Terraform, você terá uma instância EC2 do Ubuntu em sua conta da AWS e a criação de um Auto Scaling Group com um mínimo de 1, desejado de 2 e máximo de 4 instâncias. 
   
 ## Como utilizar este projeto
   
