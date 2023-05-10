@@ -2,8 +2,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_launch_configuration" "example" {
-  name_prefix   = "example-lc"
+resource "aws_launch_configuration" "decio" {
+  name_prefix   = "decio-example"
   image_id      = "ami-0c55b159cbfafe1f0"
   instance_type = "t2.micro"
 
@@ -12,8 +12,8 @@ resource "aws_launch_configuration" "example" {
   }
 }
 
-resource "aws_autoscaling_group" "example" {
-  name                 = "example-asg"
+resource "aws_autoscaling_group" "decio-asg" {
+  name                 = "decio-asg-13"
   launch_configuration = aws_launch_configuration.example.id
   min_size             = 1
   desired_capacity     = 2
@@ -22,8 +22,8 @@ resource "aws_autoscaling_group" "example" {
   vpc_zone_identifier = ["subnet-abc12345", "subnet-def67890"]
 
   tag {
-    key                 = "Name"
-    value               = "example-instance"
+    key                 = "decio"
+    value               = "decio-instance"
     propagate_at_launch = true
   }
 
