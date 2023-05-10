@@ -11,7 +11,7 @@ provider "digitalocean" {
   token = ""
 }
 
-resource "digitalocean_kubernetes_cluster" "foo" {
+resource "digitalocean_kubernetes_cluster" "decio-k8s" {
   name   = "KubeCluster01"
   region = "nyc1"
   # Grab the latest version slug from `doctl kubernetes options versions`
