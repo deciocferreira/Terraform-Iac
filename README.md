@@ -21,15 +21,19 @@ Neste projeto, iremos provisionar uma instância EC2 da AWS através da ferramen
 Após a execução do código Terraform, você terá uma instância EC2 do Ubuntu em sua conta da AWS e a criação de um Auto Scaling Group com um mínimo de 1, desejado de 2 e máximo de 4 instâncias. 
   
 ## Como utilizar este projeto
-  
-1. Inicialize o Terraform no diretório em que o script está localizado:
-    > terraform init
-    
 
-2. Valide o script com o seguinte comando:
+Faça os serguintes passos executando os seguintes comandos:
+  
+1. Inicialize o Terraform no diretório em que o script está localizado baixando os plugins necessários
+    > terraform init 
+
+2. Valide o script, verificando se há erros de sintaxe
     > terraforma validate  
 
-3. Crie a infraestrutura:
+3. Visualize o que será criado
+    > terraform plan
+   
+4. Crie a infraestrutura
     > terraform apply
 
 *Digite yes e pressione ENTER quando aparecer um prompt de confirmação do comando.*
