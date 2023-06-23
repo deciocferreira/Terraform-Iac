@@ -23,9 +23,13 @@ Após a execução do código Terraform, você terá uma instância EC2 do Ubunt
 ## Como utilizar este projeto
   
 1. Inicialize o Terraform no diretório em que o script está localizado:
-    >  terraform init
+    > terraform init
+    
 
-2. Crie a infraestrutura:
+2. Valide o script com o seguinte comando:
+    > terraforma validate  
+
+3. Crie a infraestrutura:
     > terraform apply
 
 *Digite yes e pressione ENTER quando aparecer um prompt de confirmação do comando.*
